@@ -1,0 +1,103 @@
+.social-media {
+  display: flex;
+}
+
+.social-media__instagram {
+  display: inline-block;
+  background: url("../img/icons/icons.svg#instagram") no-repeat;
+}
+
+.social-media__instagram--introduction {
+  @include width-height(18px, 18px);
+  margin-bottom: 13px;
+  @media (max-width: $tablet-landscape) {
+    @include width-height(26px, 26px);
+    margin-bottom: 25px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+  }
+}
+
+.social-media__facebook {
+  display: inline-block;
+  background: url("../img/icons/icons.svg#facebook") no-repeat;
+}
+
+.social-media__facebook--introduction {
+  @include width-height(18px, 17px);
+  margin-bottom: 13px;
+  @media (max-width: $tablet-landscape) {
+    @include width-height(26px, 26px);
+    margin-bottom: 25px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+    margin-left: 25px;
+  }
+}
+
+.social-media__twitter {
+  display: inline-block;
+  background: url("../img/icons/icons.svg#twitter") no-repeat;
+}
+
+.social-media__twitter--introduction {
+  @include width-height(17px, 16px);
+  @media (max-width: $tablet-landscape) {
+    @include width-height(26px, 26px);
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 0;
+    margin-left: 25px;
+  }
+}
+
+.social-media--introduction {
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 285px;
+  left: 47px;
+  @media (max-width: $mobile-width) {
+    flex-direction: row;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+  }
+}
+
+.social-media--track-news {
+  margin: 0 auto 50px;
+}
+
+.social-media__instagram--track-news {
+  @include width-height(23px, 23px);
+  margin-right: 14px;
+  margin-top: 1px;
+  @media (max-width: $laptop-width) {
+    @include width-height(26px, 26px);
+    margin-right: 25px;
+  }
+}
+
+.social-media__facebook--track-news {
+  @include width-height(23px, 23px);
+  margin-right: 12px;
+  margin-top: 1px;
+  @media (max-width: $laptop-width) {
+    @include width-height(26px, 26px);
+    margin-right: 25px;
+  }
+}
+
+.social-media__twitter--track-news {
+  @include width-height(23px, 23px);
+  margin-top: 2px;
+  @media (max-width: $laptop-width) {
+    @include width-height(26px, 26px);
+    margin-right: 25px;
+  }
+}

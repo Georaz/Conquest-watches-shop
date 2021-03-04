@@ -1,0 +1,72 @@
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods__good {
+  @include width-height(252px, 300px);
+  @extend %disp-flex-col;
+  background-color: $color-bg-lighter;
+  padding: 20px 20px 0;
+  margin: 0 auto 40px auto;
+}
+
+.goods__good-wrapper {
+  display: flex;
+}
+
+.goods__good-info {
+  @extend %disp-flex-col;
+}
+
+.goods__image-wrapper {
+  margin: -6px auto 0;
+  max-height: 220px;
+}
+
+.goods__good-name {
+  @include font-trinity($roboto, 14px, 700);
+  color: $color-dark-sec;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+.goods__good-price {
+  @include font-trinity($roboto, 14px, 400);
+  color: $color-dark-tert;
+}
+
+.good__discount-sum,
+.good__discount-text {
+  color: $color-light;
+  font-family: $playfair-display;
+  font-weight: bold;
+  width: 100px;
+}
+
+.goods__discount {
+  @include width-height(252px, 300px);
+  @extend %disp-flex-col;
+  background: $color-bg-discount url("../img/discount.png") no-repeat 122px 2px;
+  padding: 20px 20px 0 38px;
+  margin: 0 auto 40px auto;
+}
+
+.good__discount-sum {
+  font-size: 45px;
+  margin-top: 67px;
+  margin-bottom: 5px;
+}
+
+.good__discount-text {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.goods__image-techne1 {
+  margin: 1px 1px 1px 1px;
+}

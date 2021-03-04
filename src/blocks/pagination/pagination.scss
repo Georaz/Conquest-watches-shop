@@ -1,0 +1,38 @@
+.pagination__list {
+  @include font-trinity($roboto, 14px, 400);
+  @extend %pad-mar-null;
+  display: flex;
+  list-style: none;
+}
+
+.pagination__previous-page {
+  @include width-height(14px, 16px);
+  display: inline-block;
+  background: url('../img/icons/icons.svg#pag-left-arrow') no-repeat 100% 100%;
+  margin-right: 2px;
+}
+
+.pagination__next-page {
+  @include width-height(14px, 16px);
+  display: inline-block;
+  background: url('../img/icons/icons.svg#pag-right-arrow') no-repeat 100% 100%;
+  margin-right: -3px;
+  margin-left: 9px;
+}
+
+.pagination__page {
+  color: $color-pagination;
+  margin-left: 7px;
+}
+
+.pagination__page--current {
+  color: $color-dark-prim;
+}
+
+.pagination--shift {
+  margin-left: auto;
+  margin-bottom: 72px;
+  @media (max-width: $large-mobile) {
+    margin: 0 auto 50px;
+  }
+}

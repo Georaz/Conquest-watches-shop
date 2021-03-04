@@ -1,0 +1,10 @@
+.popular-models__container {
+  @extend %disp-flex-col;
+  padding: 49px 74px 80px 90px;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  @media (max-width: $laptop-width) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}

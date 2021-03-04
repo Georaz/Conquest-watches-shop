@@ -1,0 +1,28 @@
+.see-all-link {
+  @include font-trinity($roboto, 16px, 500);
+  color: $color-dark;
+  display: inline-block;
+  line-height: 30px;
+  border-bottom: 1px solid $color-light-prim;
+  transition-duration: 500ms;
+  &:hover {
+    color: $color-light-prim;
+    border-bottom-color: $color-light-prim;
+    transition-duration: 500ms;
+  }
+}
+
+.see-all-link--popular-models {
+  margin: -12px 0 26px auto;
+  @media (max-width: $tablet-portrait) {
+    font-size: 14px;
+    margin: 0 auto 30px;
+  }
+}
+
+.see-all-link--bands {
+  margin: auto 0 -4px auto;
+  @media (max-width: $tablet-portrait) {
+    margin-right: auto;
+  }
+}

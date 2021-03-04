@@ -1,0 +1,27 @@
+@mixin font-trinity($ff, $fs, $fw) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin grid-item($gcs, $gce, $grs, $gre) {
+  grid-column-start: $gcs;
+  grid-column-end: $gce;
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+}
+
+@mixin m-top-left($mt, $ml) {
+  margin-top: $mt;
+  margin-left: $ml;
+}
+
+@mixin width-height($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin font_s-line_h($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}

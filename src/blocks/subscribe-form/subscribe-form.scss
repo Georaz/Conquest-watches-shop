@@ -1,0 +1,44 @@
+.subscribe-form {
+  display: flex;
+  margin-left: auto;
+  padding-bottom: 6px;
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin-right: auto;
+  }
+}
+
+.subscribe-form__input {
+  @include font-trinity($roboto, 14px, 400);
+  border: none;
+  border-bottom: 2px solid $color-dark-prim;
+  background-color: transparent;
+  margin-top: auto;
+  padding: 20px 0;
+  width: 278px;
+  @media (max-width: $large-mobile) {
+    width: 200px;
+  }
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 30px;
+  }
+}
+
+.subscribe-form__button {
+  @include font-trinity($roboto, 12px, 700);
+  background-color: $color-subscribe-button;
+  border: none;
+  color: $color-light;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 24px 48px 23px 44px;
+  margin: auto 0 0 34px;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $color-light-prim;
+    transition-duration: 500ms;
+  }
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 30px;
+  }
+}

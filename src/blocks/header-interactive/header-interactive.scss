@@ -1,0 +1,101 @@
+.header-interactive {
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  padding-top: 8px;
+  position: relative;
+  @media (max-width: $mobile-width) {
+    margin: 0;
+  }
+}
+
+.header-form-wrapper {
+  background-color: $color-light;
+  position: absolute;
+  width: 300px;
+  top: 5px;
+  right: -30px;
+  z-index: 999999;
+}
+
+.header-form-wrapper--none {
+  display: none;
+}
+
+.header-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-form__search-label {
+  display: none;
+}
+
+.header-form__search {
+  @include font-trinity($roboto, 14px, 400);
+  display: block;
+  max-width: 200px;
+  border: 1px solid $color-dark-prim;
+  border-radius: 3px;
+  min-height: 30px;
+  padding: 5px 10px;
+}
+
+.header-form__search-button {
+  @extend %clear-button;
+  @include font-trinity($roboto, 10px, 500);
+  color: $color-light;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background-color: $color-dark-sec;
+  padding: 0 10px;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $color-light-prim;
+    transition-duration: 500ms;
+  }
+}
+
+.header-form__close-button {
+  @include width-height(20px, 20px);
+  @extend %clear-button;
+  @extend %pad-mar-null;
+  align-self: center;
+  cursor: pointer;
+}
+
+.search-toggler {
+  @extend %clear-button;
+  margin-top: -1px;
+}
+
+.likes {
+  margin-left: 15px;
+  @media (max-width: $mobile-width) {
+    margin-left: 28px;
+  }
+}
+
+.card {
+  @include m-top-left(1px, 23px);
+  @media (max-width: $mobile-width) {
+    margin-left: 30px;
+  }
+}
+
+.search-toggler path,
+.likes path,
+.card path {
+  transition-duration: 1500ms;
+}
+
+.search-toggler:hover path,
+.card:hover path {
+  fill: $color-light-prim;
+  transition-duration: 500ms;
+}
+
+.likes:hover path {
+  stroke: $color-light-prim;
+  transition-duration: 500ms;
+}

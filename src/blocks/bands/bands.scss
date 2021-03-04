@@ -1,0 +1,36 @@
+.bands__container {
+  max-width: $desktop-width;
+  padding: 83px 80px 40px 95px;
+  margin: 0 auto;
+  @media (max-width: $mobile-width) {
+    padding: 40px 10px;
+  }
+}
+
+.bands__header-wrapper {
+  display: flex;
+  margin-bottom: 42px;
+  @media (max-width: $tablet-portrait) {
+    font-size: 26px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bands__heading {
+  @include font-trinity($playfair-display, 32px, 400);
+  margin: 0;
+  @media (max-width: $laptop-width) {
+    font-size: 28px;
+  }
+  @media (max-width: $tablet-landscape) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: $tablet-portrait) {
+    font-size: 26px;
+
+  }
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+  }
+}

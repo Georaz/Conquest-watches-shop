@@ -1,0 +1,13 @@
+.card-buttons {
+  margin: -2px 5px 0 auto;
+}
+
+.card-buttons__like,
+.card-buttons__card {
+  @extend %clear-button;
+  @include width-height(18px, 16px);
+}
+
+.card-buttons__card {
+  margin-left: 15px;
+}

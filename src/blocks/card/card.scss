@@ -1,0 +1,212 @@
+.card__container {
+  max-width: $desktop-width;
+  padding: 0 79px 0 70px;
+  margin: 0 auto;
+  @media (max-width: $laptop-width) {
+    padding: 0 2%;
+  }
+  @media (max-width: $tablet-landscape) {
+    padding: 0 1%;
+  }
+}
+
+.card__content {
+  display: flex;
+  @media (max-width: $tablet-portrait) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card__description {
+  @include m-top-left(20px, auto);
+  background-color: $color-bg-lighter;
+  max-width: 560px;
+  padding: 49px 40px 49px 59px;
+  @media (max-width: $laptop-width) {
+    padding: 15px 2%;
+  }
+  @media (max-width: $tablet-portrait) {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card__header-wrapper {
+  display: flex;
+  margin-bottom: 45px;
+  @media (max-width: $tablet-landscape) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__info {
+  @extend %disp-flex-col;
+}
+
+.card__name {
+  @include font-trinity($roboto, 24px, 700);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  @media (max-width: $tablet-landscape) {
+    font-size: 20px;
+  }
+}
+
+.card__price {
+  @include font-trinity($roboto, 24px, 400);
+  @media (max-width: $tablet-landscape) {
+    font-size: 20px;
+  }
+}
+
+.card__like {
+  @extend %clear-button;
+  margin: 4px -6px auto auto;
+}
+
+.card__param-list {
+  @extend %pad-mar-null;
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.card__param-item {
+  @include font-trinity($roboto, 16px, 500);
+  color: $color-dark-sec;
+  display: inline-block;
+  margin-right: 48px;
+  padding-bottom: 10px;
+  @media (max-width: $tablet-landscape) {
+    font-size: 14px;
+    margin-right: 30px;
+  }
+}
+
+.card__param-item--active {
+  border-bottom: 1px solid $color-light-prim;
+}
+
+.card__text {
+  @include font-trinity($roboto, 14px, 300);
+  line-height: 22px;
+  margin-bottom: 70px;
+  @media (max-width: $tablet-landscape) {
+    margin-bottom: 40px;
+  }
+}
+
+.card__text-par {
+  margin-bottom: 26px;
+  @media (max-width: $tablet-landscape) {
+    margin-bottom: 20px;
+  }
+}
+
+.card__button {
+  @extend %clear-button;
+  @include font-trinity($roboto, 12px, 700);
+  background-color: $color-subscribe-button;
+  color: $color-light;
+  text-transform: uppercase;
+  padding: 24px 57px 22px 56px;
+  letter-spacing: 0.05em;
+  margin-left: 1px;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $color-light-prim;
+    transition-duration: 500ms;
+  }
+  @media (max-width: $tablet-portrait) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card__slider {
+  @media (max-width: $laptop-width) {
+min-width: 520px;
+  }
+  @media (max-width: $tablet-landscape) {
+min-width: 350px;
+  }
+}
+
+.card__slider-wrapper {
+  position: relative;
+  @media (max-width: $tablet-portrait) {
+    display: flex;
+  }
+}
+
+.card__slider-left-toggler,
+.card__slider-right-toggler {
+  @extend %clear-button;
+  @include width-height(36px, 69px);
+  position: absolute;
+}
+
+.card__slider-left-toggler {
+  top: 219px;
+  left: -2px;
+  @media (max-width: $tablet-portrait) {
+    left: 90px;
+  }
+  @media (max-width: $large-mobile) {
+    display: none;
+  }
+}
+
+.card__slider-right-toggler {
+  top: 219px;
+  right: -16px;
+  @media (max-width: $tablet-portrait) {
+right: 65px;
+  }
+  @media (max-width: $large-mobile) {
+    display: none;
+  }
+}
+
+.card__big-image-wrapper {
+  @media (max-width: $tablet-portrait) {
+    margin: 0 auto;
+  }
+}
+
+.card__big-image {
+  max-width: 100%;
+  height: auto;
+  margin: -22px 0px 0px 51px;
+  @media (max-width: $laptop-width) {
+    margin-left: 0;
+  }
+}
+
+.card__thumbnails-wrapper {
+  display: flex;
+  margin-left: -17px;
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card__thumb-image {
+  opacity: 80%;
+  max-width: 100%;
+  height: auto;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.card__thumb-image-wrapper {
+  line-height: 0;
+  margin-left: 18px;
+}

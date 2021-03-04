@@ -1,0 +1,101 @@
+.real-quality__container {
+  background-image:
+          url("../img/q-upper-ellipse.png"),
+          url("../img/q-lower-ellipse.png"),
+          linear-gradient(to right, $color-bg-light 34.5%, $color-bg-lighter 34.5%, $color-bg-lighter 100%);
+  background-repeat: no-repeat no-repeat;
+  background-position: 1079px 0, 1004px 0, 100% 100%;
+  display: flex;
+  padding: 52px 169px 15px;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  @media (max-width: $laptop-width) {
+    padding: 3% 3%;
+  }
+  @media (max-width: $tablet-portrait) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.real-quality-slider {
+  @extend %disp-flex-col;
+}
+
+.real-quality-slider__image-wrapper {
+  margin-bottom: 15px;
+  width: 521px;
+  @media (max-width: $tablet-landscape) {
+    width: 400px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.real-quality-slider__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.real-quality-slider__toggler {
+  margin-left: auto;
+  margin-right: 75px;
+}
+
+.real-quality-slider__toggle-left {
+  @extend %clear-button;
+}
+
+.real-quality-slider__toggle-right {
+  @extend %clear-button;
+  margin-left: 10px;
+}
+
+.real-quality-slider__number {
+  @include font-trinity($prata, 13px, 400);
+  margin-left: 9px;
+}
+
+.catalog-link--real-quality {
+  background-color: $color-light-prim;
+  transition-duration: 500ms;
+  &:hover {
+    background-color: $color-dark-sec;
+    transition-duration: 500ms;
+  }
+  @media (max-width: $tablet-landscape) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.real-quality__text {
+  padding-left: 69px;
+  padding-top: 62px;
+  @media (max-width: $laptop-width) {
+    padding-left: 5%;
+    padding-top: 10%;
+  }
+  @media (max-width: $tablet-landscape) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+  }
+  @media (max-width: $tablet-portrait) {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.real-quality__description {
+  @include font-trinity($roboto, 16px, 400);
+  line-height: 24px;
+  margin-bottom: 37px;
+  @media (max-width: $tablet-landscape) {
+    font-size: 14px;
+  }
+}

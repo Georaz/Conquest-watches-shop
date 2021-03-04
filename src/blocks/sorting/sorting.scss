@@ -1,0 +1,63 @@
+.sorting {
+  display: inline-block;
+  margin: -3px -1px 42px auto;
+  position: relative;
+  &::after {
+    @include width-height(20px, 10px);
+    content: "";
+    position: absolute;
+    background: url("../img/icons/icons.svg#sorting") no-repeat 100% 100%;
+    background-size: 20px 10px;
+    top: 5px;
+    right: -5px;
+  }
+  @media (max-width: $large-mobile) {
+    margin-right: auto;
+  }
+}
+
+.sorting__label,
+.sorting__select {
+  @include font-trinity($roboto, 14px, 400);
+}
+
+.sorting__label {
+  color: $color-breadcrumb;
+}
+
+.sorting__select {
+  margin-top: -1px;
+}
+
+.sorting__shield-left,
+.sorting__shield-up,
+.sorting__shield-right,
+.sorting__shield-bottom {
+  display: inline-block;
+  position: absolute;
+  background-color: $color-light;
+}
+
+.sorting__shield-left {
+  @include width-height(5px, 24px);
+  top: -1px;
+  left: 112px;
+}
+
+.sorting__shield-up {
+  @include width-height(120px, 5px);
+  top: -2px;
+  left: 112px;
+}
+
+.sorting__shield-right {
+  @include width-height(18px, 24px);
+  top: -1px;
+  right: -3px;
+}
+
+.sorting__shield-bottom {
+  @include width-height(120px, 6px);
+  top: 19px;
+  left: 112px;
+}
