@@ -1,67 +1,30 @@
-@mixin font($font_name, $file_name, $weight, $style) {
-  @font-face {
-    font-family: $font_name;
-    font-display: swap;
-    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-    font-weight: #{$weight};
-    font-style: #{$style};
-  }
-}
-
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
-@import "templates.scss";
-@import "../blocks/site-header/site-header.scss";
-@import "../blocks/site-header/__navigation/__navigation.scss";
-@import "../blocks/header-interactive/header-interactive.scss";
-@import "../blocks/index-introduction/index-introduction.scss";
-@import "../blocks/social-media/social-media.scss";
-@import "../blocks/block-heading/block-heading.scss";
-@import "../blocks/popular-models/popular-models.scss";
-@import "../blocks/see-all-link/see-all-link.scss";
-@import "../blocks/popular-models-grid/popular-models-grid.scss";
-@import "../blocks/real-quality/real-quality.scss";
-@import "../blocks/track-news/track-news.scss";
-@import "../blocks/footer/footer.scss";
-@import "../blocks/assortment/assortment.scss";
-@import "../blocks/filter/filter.scss";
-@import "../blocks/breadcrumbs/breadcrumbs.scss";
-@import "../blocks/sorting/sorting.scss";
-@import "../blocks/goods/goods.scss";
-@import "../blocks/card-buttons/card-buttons.scss";
-@import "../blocks/pagination/pagination.scss";
-@import "../blocks/subscribe/subscribe.scss";
-@import "../blocks/subscribe-form/subscribe-form.scss";
-@import "../blocks/bands/bands.scss";
-@import "../blocks/slider-bands/slider-bands.scss";
-@import "../blocks/card/card.scss";
-@import "../blocks/looked/looked.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+@import "mixins";
+@import "fonts";
+@import "variables";
+@import "templates";
+@import "common";
+@import "../blocks/site-header/site-header";
+@import "../blocks/site-header/__navigation/__navigation";
+@import "../blocks/header-interactive/header-interactive";
+@import "../blocks/index-introduction/index-introduction";
+@import "../blocks/social-media/social-media";
+@import "../blocks/block-heading/block-heading";
+@import "../blocks/popular-models/popular-models";
+@import "../blocks/see-all-link/see-all-link";
+@import "../blocks/popular-models-grid/popular-models-grid";
+@import "../blocks/real-quality/real-quality";
+@import "../blocks/track-news/track-news";
+@import "../blocks/footer/footer";
+@import "../blocks/assortment/assortment";
+@import "../blocks/filter/filter";
+@import "../blocks/breadcrumbs/breadcrumbs";
+@import "../blocks/sorting/sorting";
+@import "../blocks/goods/goods";
+@import "../blocks/card-buttons/card-buttons";
+@import "../blocks/pagination/pagination";
+@import "../blocks/subscribe/subscribe";
+@import "../blocks/subscribe-form/subscribe-form";
+@import "../blocks/bands/bands";
+@import "../blocks/slider-bands/slider-bands";
+@import "../blocks/card/card";
+@import "../blocks/looked/looked";

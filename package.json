@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "HTML, CSS, Javascript, BEM, Less, Gulp"
+    "HTML, CSS, Javascript, BEM, Sass-Scss, Gulp"
   ],
   "author": "Georaz",
   "license": "ISC",
